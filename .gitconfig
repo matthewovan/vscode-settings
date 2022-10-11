@@ -1,0 +1,10 @@
+# https://git-scm.com/docs/git-config#_example
+
+[core]
+    # Prevent Git for Windows from "helpfully" converting LF to CRLF
+    # when checking out files. core.autocrlf would otherwise override
+    # the core.eol settings.
+    autocrlf = false
+    # Force Unix-style LF line endings in this repo. Despite probably
+    # cloning this repo from Windows, we use it in a Linux environment.
+    eol = lf
