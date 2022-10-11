@@ -1,21 +1,16 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
     "version": "0.2.0",
     "configurations": [
         {
             "name": "gcc build then debug file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/a.out",
-            "args": [
-                "test-1.txt",
-                "test-2.txt",
-                "test-3.txt"
-            ],
+            "program": "${workspaceFolder}/a.out",
+            // Pass arguments to the executable: [ "foo", "bar" ] will run './a.out foo bar'.
+            "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -26,6 +21,7 @@
                     "ignoreFailures": true
                 }
             ],
+            // Custom tasks can be found in .vscode/tasks.json.
             "preLaunchTask": "build",
             "miDebuggerPath": "gdb"
         }

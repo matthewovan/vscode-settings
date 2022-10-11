@@ -1,12 +1,16 @@
 {
-    "name": "mattovanLinuxMachine",
+    // https://containers.dev/implementors/json_reference/
+    "name": "csslab-container",
     "image": "cssimages/csslab:latest",
     "build": {
-        "context": ".."
+        // The Docker build runs in this path.
+        "context": "${localWorkspaceFolder}"
     },
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/cssuwbstudent/mattovan/${localWorkspaceFolderBasename},type=bind",
-    "workspaceFolder": "/home/cssuwbstudent/mattovan/${localWorkspaceFolderBasename}",
-    "containerUser": "root",
+    // Bind-mount this workspace from your local OS filesystem into the container's filesystem.
+    // File changes in the workspace will be kept in sync between your local OS and the container.
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/cssuwbstudent/${localWorkspaceFolderBasename},type=bind",
+    // Where VS Code starts inside the container and expects the workspace folder.
+    "workspaceFolder": "/home/cssuwbstudent/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
             // Add the IDs of extensions you want installed when the container is created.
