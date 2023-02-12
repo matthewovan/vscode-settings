@@ -13,6 +13,11 @@
                 "-Wextra",
                 "-Wno-sign-compare",
                 "*.cpp"
+                // if you have an output file, you can add a comma to the last line and add the commented out lines below
+                /*
+                "-o",
+                "my-output-file-name"
+                */
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
