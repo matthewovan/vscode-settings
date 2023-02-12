@@ -5,6 +5,9 @@ Matt's custom vscode settings
 For anyone coding c++, but specifically for the development environment at the University of Washington Bothell. However, with minor changes, 
 the .devcontainer.json file can be modified to accomidate any docker environment.
 
+## What if I'm not a UWB CSS student?
+You'll have to take a very careful look at the .devcontainer.json file to make sure it matches your exact Docker image filepath.
+
 ## What's all of this?
 This is a suite of files that make coding c++ in vscode a lot easier. It includes debugging, IntelliSense, Clang, and an automated docker container launcher.
 
@@ -24,5 +27,3 @@ Pressing the F5 key // this starts the debugger
 ## Make sure you read through all the files before using the tools
 Sometimes these files won't work for your sepcific development environment. You will likely have to change filenames, file paths, and output files to get this to work right.
 I did my best to make it generic, but you might have to fix a few things to make it work smoothly for your projects.
-
-
