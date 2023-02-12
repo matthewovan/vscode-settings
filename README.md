@@ -16,8 +16,8 @@ The .devcontainer.jason launches any project in a docker container, whose image 
 clang-format -i *{your filetype} // in-place formats all files with the designated filetype in your repo
 
 clang-tidy *.cpp // this will check your code against the errors and warning enabled in the .clang-tidy file
-                 // you can disable an error at the line it occurs using ` //NOLINT ` at the end of that line, 
-                 // or ` // NOLINTBEGIN(check-name) ... // NOLINTEND(check-name) ` for a code block with a specified error (check-name) in mind.
+                 you can disable an error at the line it occurs using ` //NOLINT ` at the end of that line, 
+                 or ` // NOLINTBEGIN(check-name) ... // NOLINTEND(check-name) ` for a code block with a specified error (check-name) in mind.
                  
 Pressing the F5 key // this starts the debugger
 
