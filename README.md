@@ -27,3 +27,6 @@ Pressing the F5 key // this starts the debugger
 ## Make sure you read through all the files before using the tools
 Sometimes these files won't work for your sepcific development environment. You will likely have to change filenames, file paths, and output files to get this to work right.
 I did my best to make it generic, but you might have to fix a few things to make it work smoothly for your projects.
+## What you will have to change
+You probably have to re-write parts of the tasks.json file to reflect the .cpp files you want compiled, and the output file that they compile into. For example, many professors have your files compile into "netsim" or "web" instead of "a.out". Look under `args` on tasks.json to reflect this change.
+Also, if using docker, re-write the .devcontainer.json file to reflect the filepath of your docker image. 
