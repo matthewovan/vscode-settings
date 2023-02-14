@@ -14,6 +14,9 @@ This is a suite of files that make coding c++ in vscode a lot easier. It include
 ## What does it all do?
 The .devcontainer.jason launches any project in a docker container, whose image you specify. The rest enables clang-tidy, clang-format, IntelliSense, and debugging settings in VSCode.
 
+## How do I use it?
+Just add this package to the repository your project lives in, and it should work fine.
+
 ## Useful commands
 
 clang-format -i *{your filetype} // in-place formats all files with the designated filetype in your repo
