@@ -17,6 +17,9 @@ The .devcontainer.jason launches any project in a docker container, whose image 
 ## How do I use it?
 Just add this package to the repository your project lives in, and make the changes listed below. 
 
+## What if I don't use docker?
+Simply delete the .devcontainer.json file from your repository. If you look at the .devcontainer.json file, it includes ` "ms-vscode.cpptools" `  as an extension in the Linux environment. You will have to install a similar extension on your native vscode environment in order for this package to work if you are not using docker.
+
 ## Useful commands
 
 clang-format -i *{your filetype} // in-place formats all files with the designated filetype in your repo
